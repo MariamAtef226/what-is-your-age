@@ -105,7 +105,7 @@ window.onload= function(){
   //creating layout of display
   let num1 = document.createElement("div");
   num1.innerText = 00;
-  num1.style="font-size:5.8rem";
+  num1.style="font-size:5.5rem";
   let nums = [num1];
   for (let i = 0; i < 5; i++){
     nums.push(num1.cloneNode(true));
