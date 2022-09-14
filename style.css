@@ -28,7 +28,7 @@ body{
 
 .gridy{
     display:grid;
-    grid-template-columns: 40% 50%;
+    grid-template-columns: 45% 45%;
     justify-content:center;
     font-size:1.5rem;
     align-items: center;
