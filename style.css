@@ -1,0 +1,128 @@
+:root{
+  --violet:#f6d5f7;
+  --yellowish: #fbe9d7;
+  --dark:#620965;
+}
+
+body{
+  font-family: Roboto;
+  background-image: linear-gradient(to right, var(--violet), var(--yellowish));
+  margin:0;
+}
+
+.outer{
+    margin:5px;
+    padding:5px;
+    text-align: center;
+}
+
+.outer h1{
+    font-size:3rem;
+    text-align: center;
+}
+
+.outer p{
+    font-size:1.5rem;
+    color:var(--dark);
+}
+
+.gridy{
+    display:grid;
+    grid-template-columns: 40% 50%;
+    justify-content:center;
+    font-size:1.5rem;
+    align-items: center;
+}
+
+input, select{
+    margin:5px;
+    padding:5px;
+    border:none;
+    font-size:1rem;
+}
+
+input:focus, select:focus{
+    outline:solid var(--dark);
+}
+
+button:focus{
+    border:none;
+    outline:none;
+}
+
+button, button:focus{
+    border:none;
+    font-family:Roboto;
+    font-size:1.2rem;
+    padding:10px;
+    margin: 5px auto;
+    display:block;
+    cursor:pointer;
+    background-color: var(--violet);
+    border-radius: 20px;
+    transition: background-color 0.5s linear;
+  }
+
+button:hover{
+    background-color:var(--yellowish);
+  }
+
+.title{
+    font-size:1.2rem !important;
+  }
+
+label{
+    color:#a416a9;
+  }
+
+form, .age{
+    padding:10px;
+    background-color:rgba(255,255,255,0.4);
+}
+
+.age{
+  margin-top:20px;
+  text-align:center;
+  display:grid;
+  grid-template-columns:30% 30% 30%;
+  justify-content:space-between;
+}
+
+.caption{
+    grid-column: 1/ span 3;
+    font-size:1.5rem;
+    color: var(--dark);
+}
+
+/* .footer{
+    padding:15px;
+    margin:10px 0 0;
+    text-align: center;
+    line-height: 30px;
+    background-color: #620965;
+    color: var(--violet);
+    font-size:0.95rem;
+} */
+
+
+
+
+
+@media (min-width:768px){
+
+.outer h1{
+  font-size: 4rem;
+}
+
+.gridy{
+  grid-template-columns: 20% 30%;
+}
+
+.age{
+grid-template-columns:repeat(6,15%);
+}
+
+.caption{
+  grid-column:1/ span 6;
+}
+}
